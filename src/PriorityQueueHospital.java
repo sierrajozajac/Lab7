@@ -122,7 +122,7 @@ public class PriorityQueueHospital<PatientType> extends Hospital<PatientType> {
 	public String allPatientInfo() {
 		String ret = "";
 		for (PatientType p : hospital) {
-			ret += p.toString();
+			ret += p.toString() +"\n";
 		}
 		return ret;
 	}

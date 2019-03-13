@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * @version 2019-03-06
  */
 public class Driver
-{
+{ 
     /**
      * Main method for the Hospital Comparison system. Takes repeated inputs from the user to interact with
      * the hospitals. Three hospitals are created for treating animals and people each. When a person or animal

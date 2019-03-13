@@ -54,7 +54,7 @@ public class TestDriver {
 		Assert.assertEquals(animal_s.treatNextPatient(), a3);
 		Assert.assertEquals(animal_s.hospitalType(), "Stack Hospital");
 		Assert.assertEquals(animal_s.numPatients(), 2);
-		String reta1 = a1.toString() + a2.toString();
+		String reta1 = a1.toString() + "\n" + a2.toString() +"\n";
 		Assert.assertEquals(animal_s.allPatientInfo(), reta1);
 		
 		// Test animal priority queue
@@ -63,7 +63,7 @@ public class TestDriver {
 		Assert.assertEquals(animal_pqh.treatNextPatient(), a1);
 		Assert.assertEquals(animal_pqh.hospitalType(), "Priority Queue Hospital");
 		Assert.assertEquals(animal_pqh.numPatients(), 2);
-		String reta2 = a3.toString() + a4.toString();
+		String reta2 = a3.toString() + "\n" + a4.toString() +"\n";
 		Assert.assertEquals(animal_pqh.allPatientInfo(), reta2);
 		
 		// Test animal queue
@@ -72,7 +72,7 @@ public class TestDriver {
 		Assert.assertEquals(animal_qh.treatNextPatient(), a2);
 		Assert.assertEquals(animal_qh.hospitalType(), "Queue Hospital");
 		Assert.assertEquals(animal_qh.numPatients(), 2);
-		String reta3 = a3.toString() + a4.toString();
+		String reta3 = a3.toString() + "\n" + a4.toString() +"\n";
 		Assert.assertEquals(animal_qh.allPatientInfo(), reta3);
 		
 		// Add healthy people
@@ -98,7 +98,7 @@ public class TestDriver {
 		Assert.assertEquals(hp_s.treatNextPatient(), hp1);
 		Assert.assertEquals(hp_s.hospitalType(), "Stack Hospital");
 		Assert.assertEquals(hp_s.numPatients(), 2);
-		String rethp1 = hp2.toString() + hp4.toString();
+		String rethp1 = hp2.toString() + "\n" + hp4.toString() +"\n";
 		Assert.assertEquals(hp_s.allPatientInfo(), rethp1);
 		
 		// Test healthy people priority queue
@@ -107,7 +107,7 @@ public class TestDriver {
 		Assert.assertEquals(hp_pqh.treatNextPatient(), hp1);
 		Assert.assertEquals(hp_pqh.hospitalType(), "Priority Queue Hospital");
 		Assert.assertEquals(hp_pqh.numPatients(), 2);
-		String rethp2 = hp2.toString() + hp4.toString();
+		String rethp2 = hp2.toString() + "\n" + hp4.toString() +"\n";
 		Assert.assertEquals(hp_pqh.allPatientInfo(), rethp2);
 		
 		// Test healthy people queue
@@ -116,7 +116,7 @@ public class TestDriver {
 		Assert.assertEquals(hp_qh.treatNextPatient(), hp4);
 		Assert.assertEquals(hp_qh.hospitalType(), "Queue Hospital");
 		Assert.assertEquals(hp_qh.numPatients(), 2);
-		String rethp3 = hp1.toString() + hp3.toString();
+		String rethp3 = hp1.toString() + "\n" + hp3.toString() +"\n";
 		Assert.assertEquals(hp_qh.allPatientInfo(), rethp3);
 		
 		// Add sick people
@@ -142,7 +142,7 @@ public class TestDriver {
 		Assert.assertEquals(sp_s.treatNextPatient(), sp3);
 		Assert.assertEquals(sp_s.hospitalType(), "Stack Hospital");
 		Assert.assertEquals(sp_s.numPatients(), 2);
-		String retsp1 = sp1.toString() + sp4.toString();
+		String retsp1 = sp1.toString() + "\n" + sp4.toString() +"\n";
 		Assert.assertEquals(sp_s.allPatientInfo(), retsp1);
 		
 		// Test healthy people priority queue
@@ -151,7 +151,7 @@ public class TestDriver {
 		Assert.assertEquals(sp_pqh.treatNextPatient(), sp1);
 		Assert.assertEquals(sp_pqh.hospitalType(), "Priority Queue Hospital");
 		Assert.assertEquals(sp_pqh.numPatients(), 2);
-		String retsp2 = sp2.toString() + sp3.toString();
+		String retsp2 = sp2.toString() + "\n" + sp3.toString() +"\n";
 		Assert.assertEquals(sp_pqh.allPatientInfo(), retsp2);
 		
 		// Test sick people queue
@@ -160,7 +160,7 @@ public class TestDriver {
 		Assert.assertEquals(sp_qh.treatNextPatient(), sp4);
 		Assert.assertEquals(sp_qh.hospitalType(), "Queue Hospital");
 		Assert.assertEquals(sp_qh.numPatients(), 2);
-		String ret3 = sp3.toString() + sp2.toString();
+		String ret3 = sp3.toString() + "\n" + sp2.toString() +"\n";
 		Assert.assertEquals(sp_qh.allPatientInfo(), ret3);
 		
 	}
