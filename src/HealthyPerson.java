@@ -1,11 +1,26 @@
 import java.util.Comparator;
 
+/**
+ * Class representing a healthy person
+ * @author Sierra Jo
+ * @version 03/12/2019
+ */
 public class HealthyPerson extends Person implements Comparator<Person>{
 
+	/**
+	 * Protected variables representing all necessary information 
+	 * for a healthy person object
+	 */
 	protected String name;
 	protected int age;
 	protected String reason;
 	
+	/**
+	 * Constructor for Healthy Person
+	 * @param name The person's name
+	 * @param age The person's age
+	 * @param reason The reason the healthy person is visiting the hospital
+	 */
 	public HealthyPerson(String name, int age, String reason) {
 		super(name, age);
 		this.name = name;

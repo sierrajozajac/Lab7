@@ -1,13 +1,27 @@
 import java.util.Comparator;
 
+/**
+ * Class representing a sick person
+ * @author Sierra Jo
+ * @version 03/12/2019
+ */
 public class SickPerson extends Person implements Comparator<Person>{
 
+	/**
+	 * Protected variables representing all necessary information 
+	 * for a sick person object
+	 */
 	public int severity;
 	public String name;
 	public int age;
 	
-	// SickPersons are ordered by their illness severity in decreasing order.
-
+	/**
+	 * Constructor for Healthy Person
+	 * @param name The person's name
+	 * @param age The person's age
+	 * @param severity The severity of their illness
+	 * Sick people are ordered by their illness severity in decreasing order.
+	 */
 	public SickPerson(String name, int age, int severity) {
 		super(name, age);
 		this.name = name;
